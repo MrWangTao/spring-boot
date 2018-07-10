@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/wangwangwang?useUnicode=true&charactorEncoding=utf8
+    driver-class-name: com.mysql.jdbc.Driver
+logging:
+  level:
+    com:
+      bear:
+        house:
+          mybatis:
+            mapper: debug
+
+## 添加扫描防止无法绑定
+mybatis:
+  mapper-locations: classpath:mapper/**
