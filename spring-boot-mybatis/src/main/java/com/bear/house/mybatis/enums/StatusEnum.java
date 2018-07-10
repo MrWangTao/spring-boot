@@ -1,6 +1,5 @@
 package com.bear.house.mybatis.enums;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 

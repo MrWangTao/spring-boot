@@ -34,7 +34,9 @@ public class UserController {
                 .status(StatusEnum.ENABLE)
                 .note("test mybatis enum")
                 .build();
-        userService.saveUser(user);
+        int i = 1;
+        StatusEnum anEnum = StatusEnum.getEnum(i);
+        // userService.saveUser(user);
         System.out.println("success");
         return "success";
     }
